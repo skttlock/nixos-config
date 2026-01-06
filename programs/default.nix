@@ -1,8 +1,9 @@
 # imported by ../configuration.nix ...?
 { pkgs, ... } : {
 	imports = [
-		./nvim.nix
+        ./bash.nix
 		./tmux.nix
+		./nvim.nix
 		./ssh.nix
 		./git.nix
 	];
@@ -15,6 +16,10 @@
 		lsd
 		bat
 		#  wget
+
+
+		calibre
+		picard
 	];
 
 	# Some programs need SUID wrappers, can be configured further or are
