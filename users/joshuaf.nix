@@ -4,7 +4,7 @@
   users.users.joshuaf = {
     isNormalUser = true;
     description = "Joshua Foreman";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "lp" ];
     packages = with pkgs; [
 	# see ../programs/default.nix
     #  thunderbird
