@@ -16,17 +16,20 @@
 	};
 
 	# networking
-	networking.networkmanager.enable = true;
-	networking.hostName = "nixos"; # Define your hostname.
-	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-	# Configure network proxy if necessary
-	# networking.proxy.default = "http://user:password@proxy:port/";
-	# networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-	# Open ports in the firewall.
-	# networking.firewall.allowedTCPPorts = [ ... ];
-	# networking.firewall.allowedUDPPorts = [ ... ];
-	# Or disable the firewall altogether.
-	# networking.firewall.enable = false;
+	networking = {
+    networkmanager.enable = true;
+        hostName = "nixos"; # Define your hostname.
+        nameservers = [ "192.168.7.248" ];
+        # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+        # Configure network proxy if necessary
+        # proxy.default = "http://user:password@proxy:port/";
+        # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+        # Open ports in the firewall.
+        # firewall.allowedTCPPorts = [ ... ];
+        # firewall.allowedUDPPorts = [ ... ];
+        # Or disable the firewall altogether.
+        # firewall.enable = false;
+    };
 
 	# locale & timezone
 	# Set your time zone.
