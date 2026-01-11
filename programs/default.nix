@@ -10,13 +10,21 @@
 
 	# List packages installed in system profile. To search, run:
 	# $ nix search wget
-	environment.systemPackages = with pkgs; [
+    environment.systemPackages = with pkgs; [
 		vim
-		git
 		lsd
 		bat
-		#  wget
+        ranger
+		# wget
+        gh
 
+        typst
+
+        vlc
+
+        libreoffice
+
+        inkscape
 
 		calibre
 		picard
