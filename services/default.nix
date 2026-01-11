@@ -1,6 +1,6 @@
 # services.nix - list the services you want to enable
 # imported by configuration.nix
-_: {
+{ pkgs, ...}: {
 	imports = [
 		./audio.nix
 		# ./xserver.nix
@@ -19,7 +19,15 @@ _: {
 		displayManager.gdm.enable = true;
 		desktopManager.gnome.enable = true;
 		flatpak.enable = true;
-		printing.enable = true;
+		printing = {
+            enable = true;
+            drivers = [ pkgs.hplip ];
+        };
+        avahi = { # service discovery system
+            enable = true;
+            nssmdns4 = true;
+            openFirewall = true;
+        };
 	};
 	
 }
