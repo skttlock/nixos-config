@@ -3,7 +3,8 @@
 _: {
 	imports = [
 		./audio.nix
-		#./xserver.nix
+		# ./xserver.nix
+        ./syncthing.nix
 	];
 	
 	services = {
