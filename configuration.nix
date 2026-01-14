@@ -4,7 +4,7 @@
             ./services/default.nix
             ./programs/default.nix
             ./users/joshuaf.nix
-            # ./storage.nix
+            ./storage.nix
     ];
 
     nix.settings.experimental-features = ["nix-command"];
