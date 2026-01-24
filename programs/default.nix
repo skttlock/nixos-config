@@ -18,7 +18,9 @@
 		bat
         ranger
 		# wget
-        gh
+        nix-search-cli              # provides nix-search
+
+        lm_sensors
 
         gh
         typst
