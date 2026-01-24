@@ -5,6 +5,7 @@
             ./programs/default.nix
             ./users/joshuaf.nix
             ./storage.nix
+            ./fonts.nix
     ];
 
     hardware.fw-fanctrl.enable = true;
