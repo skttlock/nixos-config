@@ -27,7 +27,12 @@
 
         libreoffice
 
+        godot
+        blender
+        krita
+        gimp
         inkscape
+        kdePackages.kdenlive
 
 		calibre
 		picard
