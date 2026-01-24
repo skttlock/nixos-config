@@ -6,6 +6,8 @@
 		./nvim.nix
 		./ssh.nix
 		./git.nix
+
+        ./starship.nix              # installs and configures starship, a better shell prompt
 	];
 
 	# List packages installed in system profile. To search, run:
