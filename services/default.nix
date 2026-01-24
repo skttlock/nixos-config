@@ -28,6 +28,8 @@
             nssmdns4 = true;
             openFirewall = true;
         };
+
+        thermald.enable = true;
 	};
 	
 }
