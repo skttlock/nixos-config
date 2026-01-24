@@ -20,6 +20,7 @@
 		# wget
         gh
 
+        gh
         typst
 
         vlc
