@@ -23,6 +23,8 @@
         gh
         typst
 
+		calibre
+		picard
         vlc
 
         libreoffice
