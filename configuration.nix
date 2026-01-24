@@ -7,6 +7,8 @@
             ./storage.nix
     ];
 
+    hardware.fw-fanctrl.enable = true;
+
     nix.settings.experimental-features = ["nix-command"];
     nixpkgs.config.allowUnfree = true;	# allow unfree packages
 
