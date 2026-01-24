@@ -34,8 +34,7 @@
         inkscape
         kdePackages.kdenlive
 
-		calibre
-		picard
+        discord
 	];
 
 	# Some programs need SUID wrappers, can be configured further or are
